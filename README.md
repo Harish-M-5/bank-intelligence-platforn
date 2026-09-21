@@ -1,4 +1,4 @@
-Banking Intelligence Platform
+## Banking Intelligence Platform
 
 A mini banking operations dashboard for small banks and fintech startups: digital KYC,
 a Customer 360 dashboard, payment monitoring, rule-based fraud alerts, and Excel reporting.
