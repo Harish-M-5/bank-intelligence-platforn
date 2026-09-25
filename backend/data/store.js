@@ -1,8 +1,5 @@
-// In-memory "database" for the demo backend.
-// Swap this module out for a real DB (Mongo/Postgres) without touching server.js's route logic.
-
 const FRAUD_AMOUNT_THRESHOLD = 100000;
-const FAILED_TXN_THRESHOLD = 3; // 3+ failed transactions from the same customer trips the rule
+const FAILED_TXN_THRESHOLD = 3; 
 
 let transactions = [
   {
