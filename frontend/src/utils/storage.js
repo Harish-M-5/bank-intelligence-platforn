@@ -1,6 +1,3 @@
-// All customer/KYC data lives in browser Local Storage, per the spec.
-// Transactions live on the backend (see api.js) — this file only handles customers.
-
 const CUSTOMERS_KEY = "BIP";
 
 export function getCustomers() {
