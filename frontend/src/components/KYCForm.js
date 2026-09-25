@@ -8,7 +8,6 @@ const EMPTY_FORM = {
   documentId: ""
 };
 
-// Flow: Registration -> Scan -> Verify -> Approve -> Store
 const STEPS = ["Registration", "Scan", "Verify", "Approve", "Stored"];
 
 export default function KYCForm({ customers, onRegistered }) {
