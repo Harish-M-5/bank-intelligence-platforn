@@ -3,6 +3,16 @@
 A mini banking operations dashboard for small banks and fintech startups: digital KYC,
 a Customer 360 dashboard, payment monitoring, rule-based fraud alerts, and Excel reporting.
 
+---
+## Demo video:
+
+
+https://github.com/user-attachments/assets/64002446-f85b-4d75-a391-de3a30c1c095
+
+
+
+
+
 ## Architecture
 
 ```
@@ -134,3 +144,30 @@ REACT_APP_API_URL=https://your-api-host.example.com npm run build
   fine for a demo, but you'd move this to the backend/a real DB for a multi-user deployment.
 - The QR/document scan is a UI simulation (generates a mock code and runs format checks on the
   Document ID) rather than a real camera/OCR integration.
+
+
+  ## Output:
+  <img width="1920" height="1080" alt="Screenshot 2026-09-20 122917" src="https://github.com/user-attachments/assets/2a4dbb54-b497-40b5-b801-d9baa023621b" />
+
+  <img width="1920" height="1080" alt="Screenshot 2026-09-20 122933" src="https://github.com/user-attachments/assets/d5c66524-dc8b-4817-b77e-346a3ec5eafe" />
+
+  <img width="1920" height="1080" alt="Screenshot 2026-09-20 122955" src="https://github.com/user-attachments/assets/ea4d2a37-c699-44f4-9aef-eff249af1a0f" />
+
+  <img width="1920" height="1080" alt="Screenshot 2026-09-20 123006" src="https://github.com/user-attachments/assets/dcd19b14-163b-4197-a043-0001a4f28110" />
+
+  <img width="1920" height="1080" alt="Screenshot 2026-09-20 123016" src="https://github.com/user-attachments/assets/40d67848-2cbc-4056-b5fe-65f7d8e2a696" />
+
+
+  <img width="1920" height="1080" alt="Screenshot 2026-09-20 123029" src="https://github.com/user-attachments/assets/dded9408-ac0d-465f-adac-59ebc1e670c8" />
+
+  <img width="1920" height="1080" alt="Screenshot 2026-09-20 123044" src="https://github.com/user-attachments/assets/377f6aef-e562-4da7-a08b-a1679f72435d" />
+
+  <img width="1920" height="1080" alt="Screenshot 2026-09-20 123053" src="https://github.com/user-attachments/assets/bedcd3d9-fcbd-4db5-a803-fdd708272d00" />
+
+
+
+
+
+
+
+
