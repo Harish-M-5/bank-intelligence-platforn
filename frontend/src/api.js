@@ -1,7 +1,3 @@
-// Thin wrapper around the backend REST API (see /backend/server.js).
-// If REACT_APP_API_URL isn't set, this assumes the backend runs on localhost:5000
-// (the CRA dev-server "proxy" field in package.json also forwards /api there).
-
 const BASE_URL = process.env.REACT_APP_API_URL || "http://localhost:5000";
 
 async function request(path, options = {}) {
