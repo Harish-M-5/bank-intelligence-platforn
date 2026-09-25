@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
-// Simple request log — handy while wiring the frontend up
+// request log
 app.use((req, _res, next) => {
   console.log(`${new Date().toISOString()} ${req.method} ${req.path}`);
   next();
@@ -18,24 +18,24 @@ app.get("/health", (_req, res) => {
   res.json({ status: "ok", service: "fintech-banking-backend" });
 });
 
-// GET /api/transactions - list all transactions
+// GET /api/transactions 
 app.get("/api/transactions", (_req, res) => {
   res.json(store.getAll());
 });
 
-// GET /api/transactions/alerts - derived fraud alerts (rule-based)
+// GET /api/transactions/alerts
 app.get("/api/transactions/alerts", (_req, res) => {
   res.json(store.getFraudAlerts());
 });
 
-// GET /api/transactions/:id - single transaction
+
 app.get("/api/transactions/:id", (req, res) => {
   const txn = store.getById(req.params.id);
   if (!txn) return res.status(404).json({ error: "Transaction not found" });
   res.json(txn);
 });
 
-// POST /api/transactions - create a transaction (fraud rules applied automatically)
+// POST /api/transactions
 app.post("/api/transactions", (req, res) => {
   const { customerName, amount } = req.body;
   if (!customerName || amount === undefined) {
@@ -45,14 +45,14 @@ app.post("/api/transactions", (req, res) => {
   res.status(201).json(txn);
 });
 
-// PUT /api/transactions/:id - update a transaction (e.g. change status)
+// PUT /api/transactions/
 app.put("/api/transactions/:id", (req, res) => {
   const updated = store.update(req.params.id, req.body);
   if (!updated) return res.status(404).json({ error: "Transaction not found" });
   res.json(updated);
 });
 
-// DELETE /api/transactions/:id - remove a transaction
+// DELETE /api/transactions/
 app.delete("/api/transactions/:id", (req, res) => {
   const removed = store.remove(req.params.id);
   if (!removed) return res.status(404).json({ error: "Transaction not found" });
