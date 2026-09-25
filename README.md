@@ -235,7 +235,7 @@ The Banking Intelligence Platform is now ready to use.
 ---
 
 
-# Ledgerline demonstrates how a centralized digital platform can:
+# Centralized digital platform:
 
 - Simplify customer management
 - Improve KYC tracking
