@@ -44,7 +44,8 @@ export default function KYCForm({ customers, onRegistered }) {
   }
 
   function verifyDetails() {
-    // Simulated verification: document ID format + non-empty fields
+
+    
     const looksValid = /^[A-Za-z0-9-]{4,}$/.test(form.documentId);
     if (!looksValid) {
       setMessage({ type: "error", text: "Document ID failed the format check. Verification stopped." });
@@ -78,7 +79,7 @@ export default function KYCForm({ customers, onRegistered }) {
   }
 
   function registerPending() {
-    // Stores the customer immediately with a Pending KYC status, skipping verification
+  
     const customerId = generateCustomerId(customers);
     addCustomer({
       customerName: form.customerName,
